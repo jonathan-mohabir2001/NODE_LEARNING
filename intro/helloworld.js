@@ -3,9 +3,7 @@ Welcome to Jonathan's first lines of node programming.
 
 This directory will be dedicated to Node development, this is 
 a continuation of basic Javascript Learning. 
-
 */
-
 
 const http = require('http'); 
 const port = process.env.port || 3000
