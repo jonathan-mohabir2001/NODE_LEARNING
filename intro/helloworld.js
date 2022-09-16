@@ -13,9 +13,3 @@ const server = http.createServer((req,res) =>{
   res.end('This is my first example of node programming ')
 })
 
-
-server.listen(port, () => console.log(`server started on port ${port};` + 
-' press Ctrl-C to terminate'))
-
-
-
