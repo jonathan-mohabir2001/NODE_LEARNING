@@ -15,21 +15,20 @@ display and work with other modules in general.
 // package.json file added after running npm init in terminal.
 
 const person = require('./person');
-// this statement assigns person to the file 
+// this statement assigns person to the file
 
-const path = require('path'); 
-// node also allows for functionality to print working directories, or files 
+const path = require('path');
+// node also allows for functionality to print working directories, or files
 
+const person1 = new person('Jonathan Mohabir', 20);
+// creating new object of type person.
+person1.describeSelf();
+// calling function to describe self.
 
- const person1 = new person('Jonathan Mohabir', 20); 
- // creating new object of type person. 
- person1.describeSelf(); 
- // calling function to describe self. 
+// node index.js was ran in the terminal, the file was executed and printed out the object of person
 
- // node index.js was ran in the terminal, the file was executed and printed out the object of person 
- 
-console.log (path.basename(__dirname)); 
-console.log(path.basename(__filename)); 
+console.log(path.basename(__dirname));
+console.log(path.basename(__filename));
 
 /*
 above are two lines using the basename method of Path. 
@@ -39,6 +38,4 @@ Basename allows for the displaying of directory names as well as files.
 In the console, the name of this directory will be printed. 
 */
 
-// end of practise and basic intro to node. 
-
-
+// end of practise and basic intro to node.
