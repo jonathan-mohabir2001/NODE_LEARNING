@@ -1,0 +1,11 @@
+{
+  "name": "node_introduction",
+  "version": "1.0.0",
+  "description": "This is a practise node folder ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
