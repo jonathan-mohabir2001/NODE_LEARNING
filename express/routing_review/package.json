@@ -1,0 +1,11 @@
+{
+  "name": "routing_review",
+  "version": "1.0.0",
+  "description": "This file will contain refresher code to ensure understanding of routing for express ",
+  "main": "express_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
