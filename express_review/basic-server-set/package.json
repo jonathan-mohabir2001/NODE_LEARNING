@@ -1,0 +1,12 @@
+{
+  "name": "basic-server-set",
+  "version": "1.0.0",
+  "description": "This file covers basic server set up for express. I have a test on this soon lol ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
