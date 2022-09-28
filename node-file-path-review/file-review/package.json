@@ -1,0 +1,11 @@
+{
+  "name": "file-review",
+  "version": "1.0.0",
+  "description": "This node file will contain practise for using the filesystem module ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
