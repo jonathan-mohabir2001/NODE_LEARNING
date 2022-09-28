@@ -1,0 +1,11 @@
+{
+  "name": "reviewing-path-module",
+  "version": "1.0.0",
+  "description": "This folder will contain practise of the node path system, how to read them, and how to create new ones ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
