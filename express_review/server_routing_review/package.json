@@ -1,0 +1,11 @@
+{
+  "name": "server_routing_review",
+  "version": "1.0.0",
+  "description": "Practise practise practise. This is a practise of setting up a mini server with some routing functionality..again ",
+  "main": "express_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
