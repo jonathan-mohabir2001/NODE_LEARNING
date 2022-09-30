@@ -1,0 +1,11 @@
+{
+  "name": "req_res_review",
+  "version": "1.0.0",
+  "description": "This file contains practise with some methods of req, and res. It will help me with my understanding as to why they are used. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
