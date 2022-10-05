@@ -1,0 +1,11 @@
+{
+  "name": "refresh_folder",
+  "version": "1.0.0",
+  "description": "Practising again of creating a server using express and rendering pages. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC"
+}
