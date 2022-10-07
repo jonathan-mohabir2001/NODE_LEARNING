@@ -7,6 +7,8 @@ const express = require('express');
 const routes = express.Router();
 // routes constants assigned Router() from accessed using dot notation
 
+/// new comment
+
 const greeting =
   'Hi there my name is Jonathan, I just wrote some express code!';
 // greeting constant declared for message
