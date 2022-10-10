@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM:FILE</title>
+  </head>
+
+  <body>
+    <h2>Find the form below, which will contain</h2>
+
+    <form enctype="multipart/form-data" action="/upload" method="POST">
+      <!--
+        Encryption type of form must be multipart form data 
+        Action must be given upload 
+        Method must be post. 
+      -->
+      <label>Select file</label><br />
+      <input type="file" name="filename" />
+      <!--
+        Name attribute filename must be passed within the express method handling 
+        the form submission. 
+      -->
+      <br />
+      <p></p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
