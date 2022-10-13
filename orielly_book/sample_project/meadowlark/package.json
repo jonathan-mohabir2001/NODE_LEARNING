@@ -1,0 +1,16 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "This node file will contain practise following the Orielly textbook. A sample travel site will be created. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon meadowlark"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
