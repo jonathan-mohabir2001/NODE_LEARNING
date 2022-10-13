@@ -2,26 +2,11 @@
 This node file will be the entry point for this project. 
 */
 const express = require('express');
-
 // The concept of views understood, the handlebars module will be imported below
-const expressHandleBars = require('express-handlebars'); 
 // handlebars imported. 
 const app = express();
-/*
-ALL uses of view engines must be configured to the app 
-globally. 
-*/
-
-app.engine('handlebars', expressHandleBars({
-  defaultLayout:'main',
-}))
-//to use handlebars they must be configured. 
-app.set('view-engine', 'handlebars')
-// the set, will be 
-
 const PORT = process.env.PORT || 3000;
 // express method set, app assigned express methods, server set to port 3000
-
 //error handling is provivded at the bottom. But Routing must be coming before
 app.get('/', (req,res) => {
   res.type('text/plain')
