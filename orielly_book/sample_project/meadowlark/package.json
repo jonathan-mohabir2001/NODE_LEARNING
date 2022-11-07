@@ -2,7 +2,7 @@
   "name": "meadowlark",
   "version": "1.0.0",
   "description": "This node file will contain practise following the Orielly textbook. A sample travel site will be created. ",
-  "main": "index.js",
+  "main": "meadowlark.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon meadowlark.js"
