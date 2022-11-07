@@ -9,6 +9,12 @@
   <body>
     <h1>Welcome to about page.</h1>
 
+  {{#if fortune}}
+    <p>Here is the fortune for your day</p>
+    <blockquote>{{fortune}}</blockquote>
+
+  {{/if}}
+
 
   </body>
 

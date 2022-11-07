@@ -19,14 +19,17 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 app.get('/about', (req, res) => {
-  res.render('about');
+  const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
+  //this contant uses 
+  res.render('about', {fortune: randomFortune})
 });
+
 // routes updated. These routes are now using the render method of the response.
 // render is able to read the handle bars files because of the engine and set methods.
 
 // an array of strings will be created below.
 
-const forutnes = [
+const fortunes = [
   'Look up, not down',
   ' Do not Fear what you do not know',
   'You will have a pleasent surprise',
