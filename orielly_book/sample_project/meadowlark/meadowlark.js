@@ -8,6 +8,10 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8000;
 const expressHandlebars = require('express-handlebars');
+
+const newConst = 'random 
+
+
 // hanlde bars module importred.
 app.engine(
   '.handlebars',
