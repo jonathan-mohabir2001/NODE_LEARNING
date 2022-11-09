@@ -9,6 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const expressHandlebars = require('express-handlebars');
 // hanlde bars module importred.
+
+const fortune = require('./lib/fortune')
+// fortune constant assigned the forunte.js file. 
+
+
+
 app.engine(
   '.handlebars',
   expressHandlebars.engine({ defaultLayout: 'main.handlebars' })
@@ -19,25 +25,8 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 app.get('/about', (req, res) => {
-  const randomFortune = fortunes[Math.floor(Math.random()*fortunes.length)]
-
-  res.render('about', {fortune: randomFortune})
+  res.render('about', {fortune: fortune.getFortune() })
 });
-
-// routes updated. These routes are now using the render method of the response.
-// render is able to read the handle bars files because of the engine and set methods.
-
-// an array of strings will be created below.
-
-const fortunes = [
-  'Look up, not down',
-  ' Do not Fear what you do not know',
-  'You will have a pleasent surprise',
-];
-// array of messages created. 
-
-
-
 
 app.use(express.static(__dirname + '/public'));
 // setting up the middleware to allow for the serving of static files.
