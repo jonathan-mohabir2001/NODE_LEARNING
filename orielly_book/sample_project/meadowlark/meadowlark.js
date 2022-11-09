@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const expressHandlebars = require('express-handlebars');
 
-const newConst = 'random 
+const newConst = 'random'; 
+
 
 
 // hanlde bars module importred.
