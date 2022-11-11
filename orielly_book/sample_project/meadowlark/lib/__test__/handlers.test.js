@@ -6,7 +6,7 @@ test('home page rendering', () => {
   const req = {}
   const res = {render: jest.fn()}
 // response is going to conduct a jest function 
-  handlers.home(req, res)
+  handlers.about(req, res)
   // route to send the correct, page. 
   expect(res.render.mock.calls[0][0]).toBe('home')
   // this is the testing statement. 
