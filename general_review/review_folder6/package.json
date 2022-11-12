@@ -4,7 +4,7 @@
   "description": "This project contains practise with express, mongoose, and mongodb. ",
   "main": "express_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "jest", 
     "dev": "nodemon express_server.js"
   },
   "author": "Jonathan",
