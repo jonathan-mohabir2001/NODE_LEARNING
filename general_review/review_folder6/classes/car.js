@@ -6,7 +6,7 @@ class Car{
   }
 
   vroom(){
-    return(`Vroooom, my year is ${this.year} my model is ${this.model} and my make is ${this.make}`)
+    return(`<h1>Vroooom, my year is ${this.year} my model is ${this.model} and my make is ${this.make}</h1>`)
   }
 }
 

@@ -4,7 +4,7 @@ class Person{
     this.age = age; 
   }
   describeSelf(){
-    return (`Hi there name is ${this.name} and age is ${this.age}`)
+    return (`<h1>Hi there name is ${this.name} and age is ${this.age}</h1>`)
   }
 }
 module.exports = Person; 
