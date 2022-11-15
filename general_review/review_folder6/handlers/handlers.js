@@ -21,6 +21,9 @@ exports.renderHome = (req, res) => {
 exports.renderForm = (req, res) => {
   res.render('form')
 }
-
-
-// able to view these objects now
+exports.notFound = (req,res) => {
+  res.render('notFound')
+}
+exports.serverError = (req, res) => {
+  res.render('serverError')
+}
