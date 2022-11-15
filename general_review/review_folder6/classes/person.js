@@ -7,3 +7,5 @@ class Person{
     return (`Hi there name is ${this.name} and age is ${this.age}`)
   }
 }
+module.exports = Person; 
+// personm class exported. 
