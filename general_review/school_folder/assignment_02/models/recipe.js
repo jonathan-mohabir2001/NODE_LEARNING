@@ -1,6 +1,10 @@
 const mongoose = require('mongoose'); 
 // mongoose module imported. 
 
+/*
+This JS file contains the mongoose schema for recipe. 
+The required attributes and their types are provided accordingly. 
+*/
 let recipeSchema = mongoose.Schema({
   name: {
     type:String, 
