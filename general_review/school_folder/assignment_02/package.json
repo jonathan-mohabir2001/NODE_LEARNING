@@ -4,14 +4,15 @@
   "description": "Assignment 02, creating an application using express, mongoose, and mongodb ",
   "main": "express_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "dev":"nodemon express_server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon express_server.js"
   },
   "author": "Jonathan M",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^6.7.2",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
   }
 }
