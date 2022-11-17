@@ -1,0 +1,4 @@
+/*
+This js file creates routes for the application. 
+
+*/

@@ -1,0 +1,36 @@
+extends layout 
+
+block content 
+
+  h1 Add a recipe! 
+  form(method="POST", action="/books/add")
+        //- Create input elements based on book model
+        #form-group 
+            label Name:
+            input.form-control(name="name", type="text")
+
+        #form-group 
+            label Description :
+            input.form-control(name="description", type="text")
+    
+        #form-group 
+            label :Difficulty
+            input.form-control(name="difficulty", type="number")
+
+
+        #form-group 
+            label Ingredients:
+            //- Loop through genres to assign values to checkboxes
+            for ingredient in ingredients
+            //- routes under routes folder need to be configured for this statement to be read 
+
+                input.form-control(name="ingredients", type="checkbox" value=ingredients)
+                label=ingredients 
+        
+        #form-group 
+
+            label :Steps
+            input.form-control(name="steps", type="number")
+
+
+

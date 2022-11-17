@@ -37,6 +37,9 @@ app.set('view-engine', 'pug')
 app.get('/', (req,res) => {
   res.render('index.pug')
 })
+app.get('/add-recipe', (req, res) => {
+  res.render('add_recipe.pug')
+})
 
 app.listen(PORT, () => {
   console.log( `Server started on port ${PORT}, ctrl+c to end.`)  
