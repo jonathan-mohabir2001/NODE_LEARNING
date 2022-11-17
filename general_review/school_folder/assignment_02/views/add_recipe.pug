@@ -3,7 +3,7 @@ extends layout
 block content 
 
   h1 Add a recipe! 
-  form(method="POST", action="/books/add")
+  form(method="POST", action="/")
         //- Create input elements based on book model
         #form-group 
             label Name:
@@ -21,7 +21,7 @@ block content
         #form-group 
             label Ingredients:
             //- Loop through genres to assign values to checkboxes
-            for ingredient in ingredients
+      
             //- routes under routes folder need to be configured for this statement to be read 
 
                 input.form-control(name="ingredients", type="checkbox" value=ingredients)
