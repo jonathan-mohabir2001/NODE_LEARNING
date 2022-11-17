@@ -3,7 +3,9 @@ Model of Recipe for the database created below.
 */
 const mongoose = require('mongoose')
 const recipeSchema = mongoose.Schema({
+  
   name:{
+
     type:String, 
     required:true
   }, 

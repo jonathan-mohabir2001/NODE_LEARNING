@@ -7,7 +7,6 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 8000
 const path  = require('path')
-
 // MongoDb config starts here. 
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://127.0.0.1/foodstore')
@@ -24,12 +23,9 @@ db.on("error", (error) => {
 
 
 
-
-
-app.get('/', (req, res) => {
-  res.render('home.pug')
+app.get('/', (req,res) => {
+  res.render('index.pug')
 })
-
 
 app.set('/', path.join(__dirname, 'views'))
 app.set('view-engine', 'pug')
