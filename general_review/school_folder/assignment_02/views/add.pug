@@ -1,0 +1,22 @@
+extends layout 
+
+block content 
+  h1 Add a new recipe! 
+
+  form(method="POST", action = "/recipe/add")
+    
+    label(for="name") Name 
+    input(name = "name" , type="text")
+
+    label(for="description") Description 
+    input(name = "description", type="text")
+
+    label(for="difficulty") Difficulty 
+    input(name = "difficulty", type ="number")
+
+    label Ingredients 
+    each ingredient in ingredients 
+      input(name="ingredients", type="checkbox", value = ingredient)
+      label #{ingredient}
+
+      input(type="submit")

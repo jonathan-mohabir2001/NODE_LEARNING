@@ -23,7 +23,7 @@ let recipeSchema = mongoose.Schema({
   }, 
   steps:{
     type:[Number], 
-    required:true
+    required:false
   }
 })
 // model now created with necessary fields.

@@ -1,0 +1,27 @@
+extends layout 
+
+block content 
+
+  h1 Edit a recipe 
+
+  form(method="POST", action="/recipe/edit" + recipe._id)
+
+    label(for="name") Name 
+    input(name="name",type="text", value=recipe.name)
+
+    label(for="description") Description 
+    input(name="description", type="text" value=recipe.description)
+
+    label(for= "difficulty") Difficulty
+    input(name="difficulty", type="number" value=recipe.number)
+
+    label Ingredients
+    each ingredient in ingredients 
+      if recipe.ingredients.includes(ingredient)
+        input(name="ingredients", type="checkbox", value=ingredient)
+        else
+           input(name="ingredients", type="checkbox", value=ingredient)
+           label #{ingredient}
+
+      
+      input(type="submit")

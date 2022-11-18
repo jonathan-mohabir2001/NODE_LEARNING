@@ -4,5 +4,16 @@ block content
 
   h1 = title 
   p Welcome to #{title}
+  each recipe in recipes 
 
-  
+    div.bookitem 
+      div Name: #{recipe.name}
+      div Description: #{recipe.description}
+      div Difficulty: #{recipe.difficulty}
+
+      div Ingredients: 
+        each ingredient in recipe.ingredients 
+          div #{ingredient}
+
+      a(href="/recipe/delete" + recipe._id) Delete a recipe 
+      a(href= "/recipe/edit" + recipe._id) Edit a recipe 
