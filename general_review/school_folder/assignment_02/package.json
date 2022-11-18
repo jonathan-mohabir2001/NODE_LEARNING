@@ -4,13 +4,14 @@
   "description": "Assignment 02, CRUD app using mongoose and mongoDB, express and pug ",
   "main": "express_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon express_server.js"
   },
   "author": "Jonathan Mohabir",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "express-validator": "^6.14.2",
     "mongoose": "^6.7.2",
     "nodemon": "^2.0.20",
     "pug": "^3.0.2"
