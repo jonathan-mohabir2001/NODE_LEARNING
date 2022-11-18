@@ -7,6 +7,12 @@ const app = express()
 const PORT = process.env.PORT || 8000; 
 const path = require('path')
 // express router imported, app set express methods. 
+const Recipe = require('./models/Recipe'); 
+
+
+const indexRouter = require('./routes/index')
+// index router imported
+
 
 const mongoose = require('mongoose');
 mongoose.connect("mongodb://127.0.0.1/foodstore")
@@ -28,9 +34,20 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')))
 // middleware set, able to send static files from public directory. 
 
+app.use('/', indexRouter)
+//  home route established, using index router. 
 
-
-
+app.route("/recipe/delete/:id").get((req,res ) => {
+  var id = req.params.id;
+  Recipe.deleteOne({_id:id}, (error) => {
+    if(error){
+      res.send('<h1>ERROR</h1>')
+    }
+    else{
+      res.redirect('/')
+    }
+  })
+})
 
 
 app.listen(PORT, () => {

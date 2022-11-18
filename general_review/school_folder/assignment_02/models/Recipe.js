@@ -1,5 +1,5 @@
 /*
-Mongoos model created.
+Mongoose model creation below. 
 */
 const mongoose = require('mongoose')
 
@@ -26,5 +26,6 @@ let recipeSchema = mongoose.Schema({
     required:true
   }
 })
+// model now created with necessary fields.
 module.exports = mongoose.model("Recipe", recipeSchema); 
-
+// model is now exported. 
