@@ -1,5 +1,7 @@
 /*
 Assignment 02, created by Jonathan M. 
+
+Comments provided to demonstrate understanding. 
 */
 
 const express = require('express')
@@ -7,8 +9,9 @@ const app = express()
 const PORT = process.env.PORT || 8000; 
 const path = require('path')
 // express router imported, app set express methods. 
-const Recipe = require('./models/Recipe'); 
 
+const Recipe = require('./models/Recipe'); 
+// recipe mongoose model imported. 
 
 const indexRouter = require('./routes/index')
 // index router imported
@@ -16,12 +19,14 @@ const indexRouter = require('./routes/index')
 
 const mongoose = require('mongoose');
 mongoose.connect("mongodb://127.0.0.1/foodstore")
-
+// database connection set. 
 let dbconnect = mongoose.connection; 
 dbconnect.once("open", () => {
+  // once open, log to console. 
   console.log("database connection established")
 })
 dbconnect.on("error", (error) => {
+  // listen on for errors
   console.log("We have an error! ")
 })
 // connnection set, once function and on function created. 
@@ -38,6 +43,7 @@ app.use('/', indexRouter)
 //  home route established, using index router. 
 
 app.route("/recipe/delete/:id").get((req,res ) => {
+  // route for deleting the recipe. 
   var id = req.params.id;
   Recipe.deleteOne({_id:id}, (error) => {
     if(error){
@@ -50,6 +56,7 @@ app.route("/recipe/delete/:id").get((req,res ) => {
 })
 
 app.route("/recipe/edit/:id").get((req, res)=> {
+  // route for editing the recipe
   var id = req.params.id;
   Recipe.findById(id, (error, recipe) => {
     if(error){
@@ -62,6 +69,7 @@ app.route("/recipe/edit/:id").get((req, res)=> {
 
 
 }).post((req, res) => {
+  // post method. 
   var id = req.params.id; 
   var recipe = new Recipe(); 
   recipe.name = req.body.name; 
@@ -96,9 +104,7 @@ app.route("/recipe/add").get((req,res) => {
 });
 
 
-app.use(function ( req, res, next) {
-  next(createError(404)); 
-})
+
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
