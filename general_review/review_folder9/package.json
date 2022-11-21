@@ -1,0 +1,11 @@
+{
+  "name": "review_folder9",
+  "version": "1.0.0",
+  "description": "A general review of node, mongoose, express and templating  engines using pug ",
+  "main": "express_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathan M",
+  "license": "ISC"
+}
