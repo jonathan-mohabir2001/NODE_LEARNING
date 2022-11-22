@@ -4,8 +4,15 @@
   "description": "A general review of node, mongoose, express and templating  engines using pug ",
   "main": "express_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon express_server.js"
   },
   "author": "Jonathan M",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
+  }
 }
