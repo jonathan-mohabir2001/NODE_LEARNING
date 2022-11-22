@@ -6,6 +6,15 @@ html(lang="en")
     title Form-Application
   body 
 
-    form 
+    
+  form(method="POST" action="/api/user")
+    label(for="") firstname 
+    input(type="text " name="firstname")
+    br 
+    label(for="") lastname 
+    input(type="text" name ="lastname")
+    br 
+    input(type="submit")
+// basic form now coded, with post request method
 
   

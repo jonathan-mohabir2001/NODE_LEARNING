@@ -20,3 +20,7 @@ const userSchema =  new Schema({
   }
 })
 // A schema is now created, with two fields, firstname lastname. 
+const userModel = mongoose.model("user", userSchema); 
+// constant user model now recognized as a mongoose model, values from userSchema added. 
+module.exports = userModel; 
+// userModel exported as model. 

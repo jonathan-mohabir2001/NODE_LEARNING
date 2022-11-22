@@ -5,22 +5,21 @@ const PORT = process.env.PORT || 8000;
 
 const mongoose= require('mongoose')
 // mongoose imported. 
-var connectionString = "mongodb://localhost:27017/UserStore"
+var connectionString = "mongodb://127.0.0.1/UserStore"
 // conncection to database string set to variable 
-
 
 const handlers = require('./handlers/handlers'); 
 // handlers imported. 
+
 const path = require('path')
 const fs = require('fs'); 
-// filesystem and path imported if needed. 
-/*
-fs.mkdir(path.join(__dirname, "handlers") ,function(error) {
-  if(error) throw error 
-  console.log(`A new directory has been created`)
-  
-})
-*/
+
+const userModel = require('./models/userSchema'); 
+// userSchema imported. 
+
+
+
+
 mongoose.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, (err)=>{
   if(err) throw err
   console.log("Successful connection to MongoDb Database!")
@@ -32,6 +31,8 @@ app.set(path.join(__dirname, "views"))
 app.set('view-engine', "pug");
 // view engine set to view pug files. 
 
+app.use(express.urlencoded({extended:true}))
+// middleware added. 
 
 app.get('/', handlers.home)
 app.get('/form', handlers.form)
