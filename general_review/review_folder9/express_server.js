@@ -27,6 +27,7 @@ mongoose.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: t
 })
 // connect method created, connection to mongo db established. 
 
+
 app.set(path.join(__dirname, "views"))
 app.set('view-engine', "pug");
 // view engine set to view pug files. 
