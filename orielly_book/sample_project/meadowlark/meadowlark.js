@@ -11,14 +11,28 @@ const expressHandlebars = require('express-handlebars');
 // hanlde bars module importred.
 const handlers = require('./lib/handlers'); 
 // handlers imported. 
+
 app.engine(
   '.handlebars',
-  expressHandlebars.engine({ defaultLayout: 'main.handlebars' })
+  expressHandlebars.engine({
+    
+    defaultLayout: 'main.handlebars' ,
+    helpers:{
+      section: function(name, options){
+        if(!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this);
+        return null;
+      }
+    }
+  })
 );
 app.set('view engine', 'handlebars');
 // configuration for handle bars.
 app.use(express.static(__dirname + '/public'));
 // setting up the middleware to allow for the serving of static files.
+
+
+
 app.get('/', handlers.home)
 app.get('/about', handlers.about)
 app.use(handlers.notFound)
