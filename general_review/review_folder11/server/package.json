@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Backend practise files. ",
-  "main": "express_server.js",
+  "description": "Server side code for creating users application. ",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon express_server.js"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "nodemon index.js"
   },
   "author": "Jonathan M",
   "license": "ISC",
