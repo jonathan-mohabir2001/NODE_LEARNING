@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+/*
+In this project, React is used to display 
+the front end of the application.
+
+My Backend is a Node.js server that uses express.js as 
+well, and some implementations of MongoDB. 
+
+Components will be found in the src under components dir. 
+*/
 import './App.css';
+
+import Home from './components/Home';
+import About from './components/About';
+import Message from './components/Message';
+
+import { Route, Link} from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>My React App</h1>
       </header>
     </div>
   );
 }
-
 export default App;
