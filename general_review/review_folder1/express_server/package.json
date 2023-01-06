@@ -1,0 +1,16 @@
+{
+  "name": "express_server",
+  "version": "1.0.0",
+  "description": "This is an application that creates a basic express server. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "nodemon index.js"
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
