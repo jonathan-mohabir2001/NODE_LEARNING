@@ -1,0 +1,16 @@
+{
+  "name": "review_folder12",
+  "version": "1.0.0",
+  "description": "General review of some JavaScript and Express coding to refresh. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev":"nodemon index.js"
+    
+  },
+  "author": "Jonathan Mohabir",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
