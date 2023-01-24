@@ -1,7 +1,16 @@
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Project-Info
-  body 
+extends layout 
+
+block content 
+
+  h2 Welcome to the applcation. 
+
+  p Please refer to the following links to first navigate to 
+  the sign up page and then the sign in page. 
+
+  ul 
+    li 
+      a(href="/signUp") Sign Up 
+    li 
+      a(href="/signIn") Sign In
+
+      

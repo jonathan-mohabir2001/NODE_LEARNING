@@ -13,7 +13,7 @@ app.use(express.static('public'))
 
 
 app.get('/', (req, res) => { 
-  res.render('home')
+  res.render('info')
 })
 app.listen(PORT, () => {
   console.log(`server started on PORT ${PORT}`)
