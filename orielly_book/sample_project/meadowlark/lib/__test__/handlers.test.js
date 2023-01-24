@@ -6,12 +6,11 @@ test('home page rendering', () => {
   const req = {}
   const res = {render: jest.fn()}
 // response is going to conduct a jest function 
-  handlers.about(req, res)
+  handlers.home(req, res)
   // route to send the correct, page. 
   expect(res.render.mock.calls[0][0]).toBe('home')
   // this is the testing statement. 
 })
-
 test('about page with a fortune to be returned...?', () => {
   const req = {}
   // empty request body created. 
@@ -22,7 +21,6 @@ test('about page with a fortune to be returned...?', () => {
   expect(res.render.mock.calls.length).toBe(1)
   expect(res.render.mock.calls[0][0]).toBe('about')
 })
-
 test('404 handler renders?', () => {
   const req = {}
   const res = {render: jest.fn()}
@@ -39,5 +37,4 @@ test('505 error handling renders?', () => {
 
   expect(res.render.mock.calls.length).toBe(1)
   expect(res.render.mock.calls[0][0]).toBe('500')
-
 })
