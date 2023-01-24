@@ -4,8 +4,15 @@
   "description": "Pracising security when coding. ",
   "main": "express_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "nodemon express_server.js"
   },
   "author": "Jonathan Mohabir",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
+  }
 }
